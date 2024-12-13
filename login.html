@@ -11,6 +11,11 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.1.0/mdb.min.css" rel="stylesheet" />
+    <!-- iziToast -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css" />
+
+    <!-- Backendless -->
+    <script src="https://cdn.jsdelivr.net/npm/backendless@7.3.7/dist/backendless.min.js"></script>
 
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
@@ -19,6 +24,8 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -26,7 +33,6 @@
     <div id="preloder">
         <div class="loader"></div>
     </div>
-
 
     <div class="container mt-5">
         <div class="row mt-5">
@@ -42,43 +48,44 @@
                             </div>
                             <div class="col-sm-6">
                                 <h3 class="card-text mt-5"><b>Login to Continue !</b></h3>
-                                <form action="" method="post">
+                                <form id="loginForm">
                                     <div class="form-outline mt-5" data-mdb-input-init>
-                                        <input type="email" required id="form12" class="form-control" />
-                                        <label class="form-label" for="form12">Email</label>
+                                        <input type="email" required id="loginEmail" class="form-control" />
+                                        <label class="form-label" for="loginEmail">Email</label>
                                     </div>
 
                                     <div class="form-outline mt-3" data-mdb-input-init>
-                                        <input type="password" id="typePassword" class="form-control" />
-                                        <label class="form-label" for="typePassword">Password</label>
+                                        <input type="password" id="loginPassword" class="form-control" />
+                                        <label class="form-label" for="loginPassword">Password</label>
                                     </div>
 
-                                    <button type="submit" class="btn btn-primary btn-rounded mt-3">LOGIN</button><br><br>
-                                    <a href="" class="mt-5">Forgot Password</a>
+                                    <button type="submit"
+                                        class="btn btn-primary btn-rounded mt-3">LOGIN</button><br><br>
+                                    <a href="register.html" class="mt-5">Don't have an account? Register</a><br>
+                                    <a href="#" class="mt-5">Forgot Password</a>
                                 </form>
                             </div>
                         </div>
-                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-
     <!-- MDB -->
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.1.0/mdb.umd.min.js"></script>
-
+    <!-- iziToast -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
-    <!-- <script src="js/bootstrap.min.js"></script> -->
     <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
