@@ -21,7 +21,9 @@
     <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-        <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <script src="https://www.paypal.com/sdk/js?client-id=AVmGiENHAe0xZ90Z-taGqfaCj45WgOxNHbMi5xZmxIghSNPwT6pmilZNGggQZIagWWpNW--n78X-lw2k&currency=USD"></script>
 
     <script src="js/app.js"></script>
 </head>
@@ -40,7 +42,7 @@
         </div>
         <div class="humberger__menu__cart">
             <ul>
-                <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                <li><a href="#" id="heartIcon"><i class="fa fa-heart"></i> <span id="heartCount">1</span></a></li>
                 <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
             </ul>
             <div class="header__cart__price">item: <span>$150.00</span></div>
@@ -150,21 +152,23 @@
                             <li class="active"><a href="shop-grid.html">Shop</a></li>
                             <li><a href="#">More</a>
                                 <ul class="header__menu__dropdown">
-<li><a href="shop-details.html">Shop Details</a></li>
+                                    <li><a href="shop-details.html">Shop Details</a></li>
                                     <li><a href="shoping-cart.html">Shoping Cart</a></li>
                                     <li><a href="checkout.html">Check Out</a></li>
-                                    <li><a href="blog-details.html">Blog Details</a></li>details.html">Blog Details</a></li>
-                                </ul>
+                                    <li><a href="blog-details.html">Blog Details</a></li>details.html">Blog Details</a>
                             </li>
-                            <li><a href="./blog.html">Blog</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="col-lg-3">
                     <div class="header__cart">
                         <ul>
-                            <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                            <li><a href="#" id="heartIcon"><i class="fa fa-heart"></i> <span
+                                        id="heartCount">1</span></a></li>
                             <li><a href="shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
                         </ul>
                         <div class="header__cart__price">item: <span>UGX 200,000</span></div>
@@ -348,28 +352,8 @@
                                 </ul>
                                 <div class="checkout__order__subtotal">Subtotal <span>UGX 60,000</span></div>
                                 <div class="checkout__order__total">Total <span>UGX 60,000</span></div>
-                                <div class="checkout__input__checkbox">
-                                    <label for="acc-or">
-                                        Create an account?
-                                        <input type="checkbox" id="acc-or">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="checkout__input__checkbox">
-                                    <label for="payment">
-                                        Check Payment
-                                        <input type="checkbox" id="payment">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="checkout__input__checkbox">
-                                    <label for="paypal">
-                                        Paypal
-                                        <input type="checkbox" id="paypal">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <button type="submit" class="site-btn">PLACE ORDER</button>
+
+                                <div id="paypal-button-container"></div>
                             </div>
                         </div>
                     </div>
@@ -399,7 +383,7 @@
                     <div class="footer__widget">
                         <h6>Useful Links</h6>
                         <ul>
-<li><a href="contact.html">Contact us</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
                             <li><a href="shoping-cart.html">Cart</a></li>
                             <li><a href="blog.html">Blog</a></li>
                         </ul>
@@ -455,7 +439,6 @@
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-
 
 
 </body>
